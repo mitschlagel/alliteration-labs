@@ -23,12 +23,10 @@ const commands = {
     "we build considered, community-focused applications for people who gather, organize, and create together.",
   ],
   projects: [
-    "selected projects:",
-    "  common room     a digital home for neighborhood communities",
-    "  field notes     a shared publishing space for local stories",
-    "  kin             a lightweight toolkit for member-led groups",
-    "",
-    "more work in progress.",
+    "our projects:",
+    "  local loop      an omaha-focused local news aggregator",
+    "  spirit spotter  helps families find the best holiday decorations in their communities",
+    "  tile tally      keeps score in word games like scrabble",
   ],
   contact: [
     "say hello: hello@alliterationlabs.com",
