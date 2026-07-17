@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Alliteration is an independent development studio building community-focused applications."
+    />
+    <title>Alliteration Labs</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="terminal" id="terminal" aria-label="Alliteration Labs terminal">
+      <div class="terminal__header" aria-hidden="true">
+        <span>alliteration labs</span>
+        <span class="status-indicator" id="status-indicator">
+          <i></i><i></i><i></i><i></i><i></i>
+        </span>
+      </div>
+      <div class="terminal__output" id="output" aria-live="polite"></div>
+      <form class="terminal__prompt" id="command-form">
+        <label class="sr-only" for="command-input">Terminal command</label>
+        <span class="prompt-prefix" aria-hidden="true">welcome@alliterationlabs.com $</span>
+        <input
+          id="command-input"
+          name="command"
+          type="text"
+          autocomplete="off"
+          autocapitalize="none"
+          autocorrect="off"
+          spellcheck="false"
+          aria-label="Enter a command"
+        />
+        <span class="cursor" aria-hidden="true"></span>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
