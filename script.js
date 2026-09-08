@@ -3,6 +3,7 @@ const output = document.querySelector("#output");
 const form = document.querySelector("#command-form");
 const input = document.querySelector("#command-input");
 const statusIndicator = document.querySelector("#status-indicator");
+const commandHint = document.querySelector("#command-hint");
 
 const prompt = "welcome@alliterationlabs.com $";
 const commandHistory = [];
@@ -90,6 +91,8 @@ form.addEventListener("submit", async (event) => {
   const value = input.value;
   const command = value.trim().toLowerCase();
 
+  commandHint.remove();
+
   if (value.trim()) {
     commandHistory.push(value);
   }
@@ -131,5 +134,9 @@ input.addEventListener("keydown", (event) => {
   }
 });
 
-terminal.addEventListener("click", focusInput);
+terminal.addEventListener("click", (event) => {
+  if (!event.target.closest("a, input")) {
+    focusInput();
+  }
+});
 window.addEventListener("load", focusInput);
